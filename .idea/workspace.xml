@@ -9,15 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4130ccc-5592-44ee-a1e4-d71463dcc3db" name="Changes" comment="15.09.22_SpringSecurity_creating">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MySecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MySecurityInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MyWebInitializer.java" afterDir="false" />
+    <list default="true" id="c4130ccc-5592-44ee-a1e4-d71463dcc3db" name="Changes" comment="15.09.22_SpringSecurity_Configure">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson_67_SpringSecurityAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/controller/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/view_for_all_employees.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/view_for_hr.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/view_for_managers.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson_66_SpringSecurityBegin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson_66_SpringSecurityBegin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -57,7 +56,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "spring.configuration.checksum": "e0cce80e1b63cd8633a6f8b56b7fceda"
   }
 }]]></component>
   <component name="RunManager">
@@ -157,7 +157,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663221893770</updated>
-      <workItem from="1663221896284" duration="8618000" />
+      <workItem from="1663221896284" duration="12011000" />
+      <workItem from="1663319445872" duration="2560000" />
     </task>
     <task id="LOCAL-00001" summary="15.09.22_SpringSecurity_creating">
       <created>1663222057233</created>
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663222057233</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="15.09.22_SpringSecurity_Configure">
+      <created>1663243462139</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663243462139</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="15.09.22_SpringSecurity_creating" />
-    <option name="LAST_COMMIT_MESSAGE" value="15.09.22_SpringSecurity_creating" />
+    <MESSAGE value="15.09.22_SpringSecurity_Configure" />
+    <option name="LAST_COMMIT_MESSAGE" value="15.09.22_SpringSecurity_Configure" />
   </component>
 </project>
