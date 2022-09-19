@@ -9,12 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4130ccc-5592-44ee-a1e4-d71463dcc3db" name="Changes" comment="16.09.22_SpringSecurity_Authorization">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson_69_StorePasswordInDB.java" afterDir="false" />
+    <list default="true" id="c4130ccc-5592-44ee-a1e4-d71463dcc3db" name="Changes" comment="19.09.22_SpringSecurity_StorePasswordInDB">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson_70_PasswordEncryptionInDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MyConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MySecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +156,7 @@
       <updated>1663221893770</updated>
       <workItem from="1663221896284" duration="12011000" />
       <workItem from="1663319445872" duration="7940000" />
-      <workItem from="1663564748862" duration="4869000" />
+      <workItem from="1663564748862" duration="7182000" />
     </task>
     <task id="LOCAL-00001" summary="15.09.22_SpringSecurity_creating">
       <created>1663222057233</created>
@@ -189,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663333075337</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="19.09.22_SpringSecurity_StorePasswordInDB">
+      <created>1663576225786</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663576225786</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +215,7 @@
     <MESSAGE value="15.09.22_SpringSecurity_Configure" />
     <MESSAGE value="16.09.22_SpringSecurity_Authentication" />
     <MESSAGE value="16.09.22_SpringSecurity_Authorization" />
-    <option name="LAST_COMMIT_MESSAGE" value="16.09.22_SpringSecurity_Authorization" />
+    <MESSAGE value="19.09.22_SpringSecurity_StorePasswordInDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="19.09.22_SpringSecurity_StorePasswordInDB" />
   </component>
 </project>
