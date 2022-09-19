@@ -1,5 +1,6 @@
 package com.spring.security.service.configuration;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -7,28 +8,41 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.User.UserBuilder;
 
+import javax.sql.DataSource;
+
 // Так как у нас web приложение, то прописываем аннотацию EnableWebSecurity, таким образом
 // мы пометили как класс конфигурации. Внутри прописываются логины, пароли и роли для
 // работников нашей компании. Для этого наследуемся от класса WebSecurityConfigurerAdapter,
 // этот способ устарел, но лектор объяснял именно его.
 @EnableWebSecurity
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
+    // Это поле относится к 69 лекции, мы указываем конфигурации настройки для подключения
+    // к базе данных, все данные о пользователях SpringSecurity найдет сама. Перейдем к 30 строке.
+    @Autowired
+    DataSource dataSource;
+
     // Имплементируем один метод, внутри создаем объект класса UserBuilder и устанавливаем
     // шифрование пароля по умолчанию, мы видим, что этот метод тоже устарел,
     // здесь он нам нужен для того, чтобы создавать пользователей и пароли прямо из программы,
     // в дальнейшем мы будем хранить их в базе данных в шифрованном виде.
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        UserBuilder userBuilder = User.withDefaultPasswordEncoder();
-        // А из названия этого метода понятно, что мы создаем пользователя
-        // со всеми вытекающими, непосредственно при выполнении программы.
-        // На этом настройка проекта, пока, завершена./
-        auth.inMemoryAuthentication().withUser(userBuilder.username("Art").password("Art")
-                .roles("EMPLOYEE"));
-        auth.inMemoryAuthentication().withUser(userBuilder.username("Ivan").password("Ivan")
-                .roles("HR"));
-        auth.inMemoryAuthentication().withUser(userBuilder.username("Egor").password("Egor")
-                .roles("MANAGER"));
+        // Эта запись относится к 69 лекции.
+        // Ранее мы сами создавали пользователей, теперь мы укажем откуда брать данные для
+        // аутентификации. Указываем, что для поиска информации об аутентификации
+        // используется jdbc и указываем источник данных, передавая в него созданный бин./
+        auth.jdbcAuthentication().dataSource(dataSource);
+
+//        UserBuilder userBuilder = User.withDefaultPasswordEncoder();
+//        // А из названия этого метода понятно, что мы создаем пользователя
+//        // со всеми вытекающими, непосредственно при выполнении программы.
+//        // На этом настройка проекта, пока, завершена./
+//        auth.inMemoryAuthentication().withUser(userBuilder.username("Art").password("Art")
+//                .roles("EMPLOYEE"));
+//        auth.inMemoryAuthentication().withUser(userBuilder.username("Ivan").password("Ivan")
+//                .roles("HR"));
+//        auth.inMemoryAuthentication().withUser(userBuilder.username("Egor").password("Egor")
+//                .roles("MANAGER"));
     }
     // Имплементируем метод configure() который принимает HttpSecurity, этот объект
     // занимается тем, что дает разрешения перейти по url в зависимости от роли пользователя

@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4130ccc-5592-44ee-a1e4-d71463dcc3db" name="Changes" comment="16.09.22_SpringSecurity_Authentication">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson_68_SpringSecurityAuthorization.java" afterDir="false" />
+    <list default="true" id="c4130ccc-5592-44ee-a1e4-d71463dcc3db" name="Changes" comment="16.09.22_SpringSecurity_Authorization">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson_69_StorePasswordInDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MyConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MySecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/security/service/configuration/MySecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/view_for_all_employees.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/view_for_all_employees.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +50,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "spring.configuration.checksum": "e0cce80e1b63cd8633a6f8b56b7fceda"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Lessons/Java/SpringSecurity&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e0cce80e1b63cd8633a6f8b56b7fceda&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.65" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.65" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -157,7 +158,8 @@
       <option name="presentableId" value="Default" />
       <updated>1663221893770</updated>
       <workItem from="1663221896284" duration="12011000" />
-      <workItem from="1663319445872" duration="6381000" />
+      <workItem from="1663319445872" duration="7940000" />
+      <workItem from="1663564748862" duration="4869000" />
     </task>
     <task id="LOCAL-00001" summary="15.09.22_SpringSecurity_creating">
       <created>1663222057233</created>
@@ -180,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663325556670</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="16.09.22_SpringSecurity_Authorization">
+      <created>1663333075337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663333075337</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +210,7 @@
     <MESSAGE value="15.09.22_SpringSecurity_creating" />
     <MESSAGE value="15.09.22_SpringSecurity_Configure" />
     <MESSAGE value="16.09.22_SpringSecurity_Authentication" />
-    <option name="LAST_COMMIT_MESSAGE" value="16.09.22_SpringSecurity_Authentication" />
+    <MESSAGE value="16.09.22_SpringSecurity_Authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="16.09.22_SpringSecurity_Authorization" />
   </component>
 </project>
